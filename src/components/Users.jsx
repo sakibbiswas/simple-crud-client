@@ -21,10 +21,10 @@ const Users = () => {
     }
     return (
         <div>
-            <h2>{LoadedUsers.length}</h2>
+            <h2>{users.length}</h2>
             <div>
                 {
-                    LoadedUsers.map(user => <p key={user._id}>
+                    users.map(user => <p key={user._id}>
                         {user.name}:
                         {user.email}
                         {user._id}
